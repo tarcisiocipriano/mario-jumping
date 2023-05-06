@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link href="https://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="game-board">
+      <img src="./imgs/clouds.png" alt="" class="clouds" />
+      <img src="./imgs/pipe.png" alt="" class="pipe" />
+      <img src="./imgs/mario-run.gif" alt="" class="mario" />
+    </div>
+
+    <div class="ui">
+      <p class="score" style="display: none">0</p>
+      <button class="btn-start">play</button>
+    </div>
+
+    <audio id="myAudio">
+      <source src="./audios/jump.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="theme-sound">
+      <source src="./audios/theme.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="jump-sound">
+      <source src="./audios/jump.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="die-sound">
+      <source src="./audios/die.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
