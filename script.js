@@ -5,7 +5,7 @@ const pipeEl = document.querySelector('.pipe')
 const cloudsEl = document.querySelector('.clouds')
 
 const themeSound = document.getElementById('theme-sound')
-themeSound.volume = .7
+themeSound.volume = 0.7
 
 const jumpSound = document.getElementById('jump-sound')
 jumpSound.volume = 0.05
@@ -183,6 +183,14 @@ function gameOver() {
 
 document.addEventListener('keydown', function (e) {
   if (e.code === 'Space' && mario.isAlive) {
+    jumpSound.currentTime = 0
+    jumpSound.play()
+    mario.jump()
+  }
+})
+
+document.addEventListener('click', function (e) {
+  if (!e.target.classList.contains('btn-start') && mario.isAlive) {
     jumpSound.currentTime = 0
     jumpSound.play()
     mario.jump()

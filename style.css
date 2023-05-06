@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: '8BIT WONDER', sans-serif;
+  user-select: none;
 }
 
 body {
@@ -78,7 +79,7 @@ button {
 }
 
 .mario--jump {
-  animation: mario--jump 0.5s ease-out;
+  animation: mario--jump 1s ease-out;
 }
 
 @keyframes mario--jump {
@@ -86,7 +87,7 @@ button {
   to {
     bottom: 0;
   }
-  40%,
+  30%,
   60% {
     bottom: 180px;
   }
